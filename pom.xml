@@ -10,10 +10,16 @@
 
 	<properties>
 		<spring.version>4.3.4.RELEASE</spring.version>
-		<hibernate.version>5.2.5.Final</hibernate.version>
+		<hibernate.version>5.2.4.Final</hibernate.version>
 	</properties>
 
 	<dependencies>
+		<dependency>
+			<groupId>log4j</groupId>
+			<artifactId>log4j</artifactId>
+			<version>1.2.14</version>
+		</dependency>
+
 		<dependency>
 			<groupId>jstl</groupId>
 			<artifactId>jstl</artifactId>
@@ -91,12 +97,6 @@
 			<version>${spring.version}</version>
 		</dependency>
 
-		<!-- https://mvnrepository.com/artifact/org.slf4j/slf4j-api -->
-		<dependency>
-			<groupId>org.slf4j</groupId>
-			<artifactId>slf4j-api</artifactId>
-			<version>1.7.21</version>
-		</dependency>
 
 
 		<!-- Spring Mail -->
@@ -136,7 +136,7 @@
 		<dependency>
 			<groupId>org.hibernate</groupId>
 			<artifactId>hibernate-validator</artifactId>
-			<version>5.3.4.Final</version>
+			<version>5.1.1.Final</version>
 		</dependency>
 
 
@@ -159,7 +159,11 @@
 			<version>1.6.1</version>
 		</dependency>
 
-
+		<dependency>
+			<groupId>javax.transaction</groupId>
+			<artifactId>jta</artifactId>
+			<version>1.1</version>
+		</dependency>
 
 		<dependency>
 			<groupId>javassist</groupId>
@@ -167,7 +171,7 @@
 			<version>3.12.1.GA</version>
 		</dependency>
 
-	
+
 
 		<!--Social login dependencies start -->
 		<!-- Use Apache HttpClient as HTTP Client -->
